@@ -1,0 +1,40 @@
+.todo__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo__action main {
+  background-color: #fff;
+  padding: 1rem 3rem 2rem 2rem;
+  border-radius: 10px;
+  min-width: 400px;
+  width: 50%;
+  position: relative;
+}
+
+.todo__action main h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.todo__action main .icon-delete {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+form.edit__wrapper {
+  position: relative;
+}
+
+form.edit__wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,90 @@
+.todo__list {
+  display: flex;
+  align-items: center;
+}
+#Resizable {
+  height: 100%;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+}
+#Draggable {
+  background: transparent;
+  cursor: col-resize;
+  height: 100%;
+  width: 20px;
+  transform: translateX(-8px);
+}
+
+.todo__list nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo__list nav .search__wrapper,
+.todo__list nav .add__wrapper {
+  position: relative;
+}
+
+.todo__list nav .search__wrapper i,
+.todo__list nav .add__wrapper i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.todo__list ul {
+  list-style: none;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: calc(100vh - 255px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.todo__list ul li {
+  border-radius: 12px;
+  padding: 12px 14px;
+  transition: 0.25s linear;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 20px;
+  position: relative;
+}
+
+.todo__list ul li .icon-delete {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.todo__list ul li:hover, .todo__list ul li.active {
+  background-color: var(--bg);
+}
+
+.todo__list ul li .indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 50%;
+}
+
+.todo__list ul li p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

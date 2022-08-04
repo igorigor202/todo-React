@@ -1,0 +1,21 @@
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bg);
+  margin-top: 2rem;
+  padding: 7px;
+  border-radius: 16px;
+}
+
+.tab__item {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.tab__item.active {
+  background-color: #fff;
+}

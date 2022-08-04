@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import "./assets/vendor/icon.css";
+
+:root {
+  --bg: rgb(234, 237, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
